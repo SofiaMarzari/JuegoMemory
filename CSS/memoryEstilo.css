@@ -1,0 +1,120 @@
+body{
+  background-image: url('Img/fondo.jpg');
+}
+#contenedor{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "intro intro"
+                       "tablero fichas"
+                       "tablero fichas";
+}
+header{
+ height: 100px;
+ border-radius: 10px;
+ background-color: rgba(202, 131, 55, 0.6);
+}
+header > h1{
+  margin-left: 400px;
+  padding-top: 30px;
+  font-family: cursive;
+}
+h1,h2{
+  color: white;
+}
+p{
+  color: white;
+}
+#is-diviertase{
+  font-size: 40px;
+}
+#sectionIntro{
+  grid-area: intro;
+}
+#sectionFichas{
+  width: 800px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-area: fichas;
+  position: relative;
+  right: 100px;
+  margin: 10px;
+}
+#sectionTablero{
+  grid-area: tablero;
+  border-style:  outset;
+  width: 300px;
+  height: 450px;
+  margin: 10px;
+  border-color: grey;
+  box-shadow: grey 10px 10px;
+  background-color: rgba(240, 240, 240, 0.8);
+}
+.articlePuntajes > p{
+  color: black;
+  font-style: oblique;
+  font-size: 20px;
+  margin-left: 70px;
+}
+#confirmar{
+  position: relative;
+  right: 50px;
+  background-color: rgba(240, 240, 240, 0.4);
+  height: 430px;
+  top: 20px;
+}
+#comenzar{
+  background-color: rgba(240, 240, 240, 0.4);
+  height: 430px;
+  position: relative;
+  top: 20px;
+}
+.js-carta{
+  background-image: url('Img/atrasCarta.png');
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 150px;
+  padding: 5px 5px;
+}
+.js-asignarDiamante{
+  background-image: url('Img/asCorazon.png');
+  background-repeat: no-repeat;
+  padding: 5px 5px;
+}
+.js-asignarTrebol{
+  background-image: url('Img/asTrebol.png');
+  background-repeat: no-repeat;
+  padding: 5px 5px;
+}
+#figure{
+  width: 800px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+#divpErrorActual{
+  margin-left: 90px;
+}
+#divpErrorActual > p{
+  color:black;
+  margin-left: 100px;
+}
+#divpAciertoActual{
+  margin-left: 90px;
+}
+#divpAciertoActual > p{
+  color:black;
+  margin-left: 100px;
+}
+#divpErrorTotal{
+  margin-left: 90px;
+}
+#divpErrorTotal > p{
+  color: black;
+  margin-left:  100px;
+}
+#divpAciertoTotal{
+  margin-left: 90px;
+}
+#divpAciertoTotal > p{
+  color: black;
+  margin-left: 100px;
+}

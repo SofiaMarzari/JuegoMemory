@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/memoryEstilo.css">
+    <title>Memory</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <header>
+      <h1>Bienvenidos al juego de la Memoria</h1>
+    </header>
+    <section id="contenedor">
+      <section id="sectionIntro">
+        <h1>Instrucciones</h1>
+        <p>1. El juego comienza al presionar el botón comenzar.</p>
+        <p>2. Se muestran las marcas, y se ocultan después de unos segundos.</p>
+        <p>3. Seleccione y confirme donde recuerda que habia un diamante.</p>
+        <p>4. Si encuentra un diamante es un acierto, si encuentra un trebol es un error.</p>
+        <p>5. La partida finaliza cuando encuentra todos los diamantes.</p>
+        <p> Siga su puntaje actual y total en el tablero de información.</p>
+        <h1 id="is-diviertase"> Diviertase!</h1>
+      </section>
+      <section id="sectionFichas">
+        <button id="comenzar" type="button" name="button">Comezar</button>
+        <figure id="figure">
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+          <div class="js-carta"></div>
+          <input class="radioButton" type="radio" name="radioButtons" value="" checked>
+        </figure>
+        <button id="confirmar" type="button" name="button">Confirmar</button>
+      </section>
+      <section id="sectionTablero">
+        <article class="articlePuntajes">
+          <p>Partida Actual: </p>
+          <div id="divpAciertoActual">Aciertos:
+            <p>0</p>
+          </div>
+          <div id="divpErrorActual">Errores:
+            <p>0</p>
+          </div>
+        </article>
+        <article class="articlePuntajes">
+          <p>Totales: </p>
+          <div id="divpAciertoTotal">Aciertos:
+            <p>0</p>
+          </div>
+          <div id="divpErrorTotal">Errores:
+            <p>0</p>
+          </div>
+        </article>
+      </section>
+    </section>
+    <script type="text/javascript" src="JS/memory.js">
+    </script>
+  </body>
+</html>
