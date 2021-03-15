@@ -1,4 +1,5 @@
 "Use strict";
+/*aa */
   let btnComenzar = document.getElementById('comenzar');
   let btnConfirmar = document.getElementById('confirmar');
   let arrayCartas = document.getElementsByClassName('js-carta');
